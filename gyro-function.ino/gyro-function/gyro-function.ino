@@ -8,14 +8,12 @@
 // =========================================================================
 
 // --- Chân Kết Nối ---
-// !!! KIỂM TRA LẠI CÁC CHÂN NÀY CHO ĐÚNG VỚI MẠCH CỦA BẠN !!!
 #define LED_PIN                 19 // Chân LED (Mặc định ESP32 DevKitC thường là 2)
 #define BUZZER_PIN              18 // Chân còi báo
 #define MPU_REF_BUTTON_PIN      0 // Chân nút nhấn ĐẶT TRỤC GỐC MPU6050
 #define ALERT_RESET_BUTTON_PIN  4  // Chân nút nhấn DỪNG CẢNH BÁO
 
 // --- Cấu hình MPU6050 cho Phát hiện Tai nạn/Ngã ---
-// !!! CÁC NGƯỠNG NÀY CẦN TINH CHỈNH KỸ KHI THỬ NGHIỆM !!!
 const float ACCEL_MAGNITUDE_DEVIATION_THRESHOLD = 2.5; // Ngưỡng độ lệch gia tốc để xác định bắt đầu chuyển động (m/s^2) 
 const float GYRO_MAGNITUDE_THRESHOLD = 705.0;  // Ngưỡng tốc độ góc để xác định bắt đầu chuyển động (deg/s)
 const unsigned long MOTION_STOP_DURATION = 2000; // Thời gian đứng yên để xác nhận dừng (ms)
